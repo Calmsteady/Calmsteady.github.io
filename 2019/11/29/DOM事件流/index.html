@@ -46,17 +46,18 @@
   };
 </script>
 
-  <meta name="description" content="calmsteady@163.com">
+  <meta name="description" content="事件流描述的是事件发生的时候会在元素节点之间按照特定的顺序进行传播，这个传播的过程就是DOM事件流。 三个阶段： 捕获阶段（从上到下寻找执行事件的元素）  目标元素阶段  冒泡阶段（从下到上）                                                   注意： js代码中只能执行捕获或者冒泡其中一个阶段。 onclick和attachEvent 只能得到冒泡">
 <meta name="keywords" content="VUE, JavaScript, CSS, HTML">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Calmsteady | BLOG">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;11&#x2F;index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DOM 事件流">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;29&#x2F;DOM%E4%BA%8B%E4%BB%B6%E6%B5%81&#x2F;index.html">
 <meta property="og:site_name" content="Calmsteady | BLOG">
-<meta property="og:description" content="calmsteady@163.com">
+<meta property="og:description" content="事件流描述的是事件发生的时候会在元素节点之间按照特定的顺序进行传播，这个传播的过程就是DOM事件流。 三个阶段： 捕获阶段（从上到下寻找执行事件的元素）  目标元素阶段  冒泡阶段（从下到上）                                                   注意： js代码中只能执行捕获或者冒泡其中一个阶段。 onclick和attachEvent 只能得到冒泡">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-29T08:23:53.614Z">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/2019/11/">
+<link rel="canonical" href="http://yoursite.com/2019/11/29/DOM%E4%BA%8B%E4%BB%B6%E6%B5%81/">
 
 
 <script id="page-configurations">
@@ -64,13 +65,13 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: false,
+    isPost: true,
     isPage: false,
-    isArchive: true
+    isArchive: false
   };
 </script>
 
-  <title>Archive | Calmsteady | BLOG</title>
+  <title>DOM 事件流 | Calmsteady | BLOG</title>
   
 
 
@@ -165,69 +166,97 @@
           <div class="content">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 2 posts in total. Keep on posting.</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/29/DOM%E4%BA%8B%E4%BB%B6%E6%B5%81/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WeiM | github：Calmsteady">
+      <meta itemprop="description" content="calmsteady@163.com">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Calmsteady | BLOG">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          DOM 事件流
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2019-11-29 16:22:21 / Modified: 16:23:53" itemprop="dateCreated datePublished" datetime="2019-11-29T16:22:21+08:00">2019-11-29</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <h1 class="collection-header">2019</h1>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-29T16:22:21+08:00"
-              content="2019-11-29">
-          11-29
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/29/DOM%E4%BA%8B%E4%BB%B6%E6%B5%81/" itemprop="url">
-            <span itemprop="name">DOM 事件流</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2019-11-29T14:59:58+08:00"
-              content="2019-11-29">
-          11-29
-        </time>
-      </div>
-
-      <h2 class="post-title">
-          <a class="post-title-link" href="/2019/11/29/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </h2>
-
-    </header>
-  </article>
+        <p><strong>事件流描述的是事件发生的时候会在元素节点之间按照特定的顺序进行传播，这个传播的过程就是DOM事件流。</strong></p>
+<h2 id="三个阶段："><a href="#三个阶段：" class="headerlink" title="三个阶段："></a>三个阶段：</h2><ol>
+<li><p>捕获阶段（从上到下寻找执行事件的元素）</p>
+</li>
+<li><p>目标元素阶段</p>
+</li>
+<li><p>冒泡阶段（从下到上）                                                </p>
+</li>
+</ol>
+<h2 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h2><ol>
+<li><code>js</code>代码中只能执行捕获或者冒泡其中一个阶段。</li>
+<li><code>onclick</code>和<code>attachEvent</code> 只能得到冒泡阶段。</li>
+<li><code>addEventListener(type,function,true/false)</code>,如果第三个参数是<code>true</code>，则代表使用捕获顺序，<code>false</code>（默认）则使用冒泡顺序。</li>
+<li>捕获指的是先目标元素先为父元素，再为子元素。冒泡则相反。</li>
+<li>实际开发中很少使用捕获，更关注事件冒泡。</li>
+<li>有些事件没有冒泡：<code>onblur 、onfocus、onmouseover、onmouseleave</code></li>
+</ol>
+<h2 id="事件委托"><a href="#事件委托" class="headerlink" title="事件委托"></a>事件委托</h2><p>核心原理：给父节点设置事件监听，利用冒泡原理影响子节点，使子节点能够触发父节点的事件。</p>
+<h2 id="事件对象的target和this"><a href="#事件对象的target和this" class="headerlink" title="事件对象的target和this"></a>事件对象的target和this</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置事件对象e</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">node.addEventListener(<span class="string">'event'</span>,fn(e)&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">                      <span class="built_in">console</span>.log(e.target)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> 						<span class="built_in">console</span>.log(e.this)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">					</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">                      &#125;)</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//target 点击哪个节点，target就指向哪个节点，如果点击子节点，那么log输出 nodechildren</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//this   绑点哪个节点 就指向哪个节点，即永远指向父节点node</span></span></pre></td></tr></table></figure>
 
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/11/29/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
@@ -256,6 +285,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#三个阶段："><span class="nav-number">1.</span> <span class="nav-text">三个阶段：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意："><span class="nav-number">2.</span> <span class="nav-text">注意：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件委托"><span class="nav-number">3.</span> <span class="nav-text">事件委托</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事件对象的target和this"><span class="nav-number">4.</span> <span class="nav-text">事件对象的target和this</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
